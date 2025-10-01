@@ -183,6 +183,9 @@ main{
     justify-content: space-evenly;
     gap: 10px;
 }
+.sponser{
+    filter: grayscale();
+}
 
 h3{
     text-align: center;
