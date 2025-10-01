@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    padding: 50px;
+}
+/* Shere style */
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Header Style */
+.header-contents{
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+/* Nav style */
+.nav-content1{
+    font-size: 30px;
+}
+.nav-contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.li-items{
+    display: flex;
+}
+
+.li-item{
+    list-style-type: none;
+    margin: 20px;
+}
+.link-item{
+    text-decoration: none;
+    color: gray;
+}
+
+/* banner */
+.banner-title{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.banner-content{
+    width: 800px;
+    margin: 0px auto;
+    text-align: center;
+    
+}
+.banner-img{
+    width: 100%;
+}
+
+/* Main section */
+
+/* Team Section */
+.team-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #656565; */
+}
+.team-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.team-features{
+    width: 500px;
+    margin: auto 130px;
+}
+
+/* futures-enjoy */
+
+.futures-enjoy{
+    display: flex;
+    gap: 50px;
+    height: 990px;
+    /* border: 1px solid; */
+    margin-top: 50px ;
+    margin-bottom: 50px;
+}
+.futures-enjoy>div{
+    width: 50%;
+}
+.futures-enjoy p{
+    font-size: 20px;
+}
+.fe-content1{
+
+    overflow: auto;
+}
+.fe-titile{
+    font-size: 3.5rem;
+    border-left: 3px solid orangered;
+}
+.fetures{
+    display: grid;
+    gap: 20px;
+    
+
+}
+
+.box{
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    /* height: 125px; */
+}
+
+
+.fe-content2{
+    width: calc( (100% - 50px)/2);
+
+
+}
+.fe-content2>img{
+    padding-left: 50px;
+    height: 950px;
+}
+
+.experience{
+    position: relative;
+    top: -100px;
+    left: -10px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.Some-Facts{
+    margin-top: 50px;
+    margin-bottom: 50px ;
+}
+.some-title-text{
+    width: 40%;
+    margin-bottom: 30px;
+}
+.some-title{
+    font-weight: bold;
+    font-size: 50px;
+}
+.some-title-text>p{
+    font-size: 20px;
+}
+
+.facts-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.fbox{
+    height: 130px ;
+    width: 130px;
+    border: 1px solid tomato;
+    padding: 20px;
+    border-radius: 5px;
+    /* align-items: center; */
+    text-align: center;
+}
+.fbox>.number{
+    font-size: 50px;
+}
+.spon{
+    width: 40%;
+}
+.sponsers{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+h3{
+    text-align: center;
+    background-color: #FF900E;
+    padding: 10px 0px;
+}
+
+@media screen and (max-width:576px) {
+    .nav-contents,.li-items,.team-section,.futures-enjoy,.facts-box,.sponsers{
+        flex-direction: column;
+    }
+    .header-contents{
+        padding: 20px;
+    }
+    /* main{
+    padding: 20px;
+    } */
+    .banner-content,.team-features,.futures-enjoy>div,.some-title-text,.spon{
+        width: 100%;
+    }
+    .team-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .futures-enjoy{
+        height: auto;
+        margin-bottom: 0px;
+        margin-top:10px;
+    }
+    .fe-titile{
+        font-size: 2rem;
+    }
+    .box{
+        width: auto;
+    }
+    .fe-content2>img{
+        width: 100%;
+        padding-left: 0px;
+        height: auto;
+    }
+    .experience{
+    position: relative;
+    top: -10px;
+    left: 0px;
+    }
+    .Some-Facts{
+        margin-top: 0px;
+        margin-bottom: 50px ;
+    }
+    .facts-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 25px;
+        
+    }
+}
