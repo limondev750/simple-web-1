@@ -193,7 +193,7 @@ h3{
     padding: 10px 0px;
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:600px) {
     .nav-contents,.li-items,.team-section,.futures-enjoy,.facts-box,.sponsers{
         flex-direction: column;
     }
